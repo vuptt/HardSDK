@@ -10,9 +10,9 @@
     <EditText
         android:id="@+id/content_info"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:hint="Long press to clear the screen"
+        android:layout_height="285dp"
         android:editable="false"
+        android:hint="Long press to clear the screen"
         android:scrollbars="vertical" />
 
 
