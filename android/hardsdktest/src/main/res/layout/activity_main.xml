@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+
+    <EditText
+        android:id="@+id/content_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Long press to clear the screen"
+        android:editable="false"
+        android:scrollbars="vertical" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/search_device_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Search" />
+
+
+                <Button  android:layout_weight="1"
+                    android:id="@+id/setInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Setting information" />
+
+
+                <Button  android:layout_weight="1"
+                    android:id="@+id/btnHeartSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Enable all-day HR" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/syncStep"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Sync step count today"
+                    />
+                <Button android:layout_weight="1"
+                    android:id="@+id/syncSleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Sync sleep today"
+                    />
+                <Button android:layout_weight="1"
+                    android:id="@+id/syncHeart"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Sync today's heart rate"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button android:layout_weight="1"
+                    android:id="@+id/syncExercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Sync today's workout"
+                    />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/findBattery"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query battery" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/query_bp_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query today's blood pressure data" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/query_oxygen_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query today's blood oxygen data" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/realtime_heart_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Start measuring heart rate" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/btnBpMeasure"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Start measuring blood pressure" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/btnOxygenMeasure"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Start measuring blood oxygen" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button android:layout_weight="1"
+                    android:id="@+id/query_step_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query today's step counting data" />
+
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/query_heart_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query today's heart rate data" />
+
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/query_sleep_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query today's sleep data" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button android:layout_weight="1"
+                    android:id="@+id/query_exercise_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query exercise data after synchronization" />
+
+                <Button  android:layout_weight="1"
+                    android:id="@+id/setWeatherUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set weather unit" />
+
+
+                <Button  android:layout_weight="1"
+                    android:id="@+id/setWeatherValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set weather forecast" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button android:layout_weight="1"
+                    android:id="@+id/setDrinkSit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set reminder to drink water" />
+                <Button android:layout_weight="1"
+                    android:id="@+id/setScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set screen saver time" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/setMetronome"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set metronome" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/setWuRao"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set Do Not Disturb Mode" />
+
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/set_sedentary_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set sedentary" />
+
+
+
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/alarm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Set alarm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/call_push_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Call notification" />
+
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="WeChat notification" />
+
+
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/wristScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Raise your hand to brighten the screen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button android:layout_weight="1"
+                    android:id="@+id/queryVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query version" />
+
+                <Button  android:layout_weight="1"
+                    android:id="@+id/queryHardVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query hardware version" />
+
+                <Button  android:layout_weight="1"
+                    android:id="@+id/update_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Firmware upgrade" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/checkFirmWare"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Check for new firmware" />
+                <Button android:layout_weight="1"
+                    android:id="@+id/resourceTransf"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Transfer resource UI file" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/viewStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="View current status" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/btnCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Turn on the camera" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Reset" />
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/reset_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Restore factory settings" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button android:layout_weight="1"
+                    android:id="@+id/btnTiwen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Body temperature measurement" />
+
+                <Button
+                    android:id="@+id/btnSwitchTiwen"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Turn on automatic temperature measurement" />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnSyncBodyTemp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Sync body temperature in recent days" />
+
+
+                <Button
+                    android:id="@+id/btnSyncWanWenTemp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Sync wrist temperature in recent days" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnQueryBodyTemp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query body temperature in recent days" />
+
+
+                <Button
+                    android:id="@+id/btnQueryWanWenTemp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Query wrist temperature in recent days" />
+
+                <Button
+                    android:id="@+id/btnMeasureYeWen"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Online measurement of armpit temperature" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnCheckUi"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Check if the UI is missing" />
+
+                <Button
+                    android:id="@+id/btnTransUi"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Transfer UI" />
+
+
+                <Button
+                    android:id="@+id/btnChangeLanguage"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Change language" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

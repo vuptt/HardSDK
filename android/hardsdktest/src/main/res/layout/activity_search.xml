@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llGuolv"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtGuolv"
+            android:hint="Please enter filter criteria"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            />
+
+        <!--<TextView-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="信号排序"-->
+        <!--android:background="@color/selected"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="名称排序"-->
+        <!--android:background="@color/notSelect"-->
+        <!--/>-->
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/llGuolv"
+        android:id="@+id/search_result"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_centerInParent="true"
+        android:background="#e5e5e5"
+        android:layout_width="250dp"
+        android:visibility="gone"
+        android:layout_height="170dp">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_centerInParent="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+    <TextView
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/txtRetry"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="Research"
+        />
+</RelativeLayout>
